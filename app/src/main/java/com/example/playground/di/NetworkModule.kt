@@ -1,6 +1,6 @@
 package com.example.playground.di
 
-import com.example.playground.data.api.APIEndpoints
+import com.example.playground.data.api.MoviesApi
 import com.example.playground.data.api.ApiDetails
 import dagger.Module
 import dagger.Provides
@@ -12,7 +12,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-class NetworkModule {
+object NetworkModule {
 
     @Provides
     @Singleton
@@ -23,7 +23,7 @@ class NetworkModule {
 
     @Provides
     @Singleton
-    fun providesApiEndpoints(retrofit: Retrofit): APIEndpoints {
-        return retrofit.create(APIEndpoints::class.java)
+    fun providesApiEndpoints(retrofit: Retrofit): MoviesApi {
+        return retrofit.create(MoviesApi::class.java)
     }
 }

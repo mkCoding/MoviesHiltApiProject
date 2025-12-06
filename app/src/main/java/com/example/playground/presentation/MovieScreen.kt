@@ -79,7 +79,7 @@ fun MovieScreen(
 
 
                                 Text("Director", color = Color.Gray, fontWeight = FontWeight.SemiBold, fontStyle = FontStyle.Italic)
-                                Text("${item.director}", fontSize = 25.sp, modifier = Modifier.padding(bottom = 16.dp))
+                                Text("${item.director}", fontSize = 25.sp, modifier = Modifier.padding(bottom = 16.dp), textAlign = TextAlign.Center)
                             }
 
                         }

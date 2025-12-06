@@ -1,11 +1,11 @@
 package com.example.playground.domain
 
-import com.example.playground.data.api.APIEndpoints
+import com.example.playground.data.api.MoviesApi
 import javax.inject.Inject
 
 class MoviesRepository @Inject constructor(
-    private val apiEndpoints: APIEndpoints
+    private val moviesApi: MoviesApi
 ){
-    suspend fun getAllMovies() = apiEndpoints.getAllMovies()
+    suspend fun getAllMovies() = this@MoviesRepository.moviesApi.getAllMovies()
 
 }
