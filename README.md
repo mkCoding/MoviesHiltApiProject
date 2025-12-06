@@ -1,4 +1,4 @@
-# Steps to Set Up and Use Hilt to Consume & Render an API Endpoint
+# Steps to Set Up and Use Hilt to Consume API Endpoint & Render Data
 
 Follow these steps to integrate **Hilt** for dependency injection and fetch + display data from a REST API in your Jetpack Compose app.
 
