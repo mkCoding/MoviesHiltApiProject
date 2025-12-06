@@ -8,9 +8,9 @@ Open your **module-level** `build.gradle.kts` (usually `app/build.gradle.kts`):
 
 ```gradle
 plugins {
-   // Add this line
-   id("com.google.dagger.hilt.android") version "2.51" apply false
-}
+   // Add this lines
+    id ("kotlin-kapt")
+    id ("com.google.dagger.hilt.android")}
 
 dependencies {
     // Hilt core - Add these lines
@@ -23,6 +23,13 @@ dependencies {
     // Retrofit + Gson (for API calls) - Add these lines
     implementation("com.squareup.retrofit2:retrofit:2.11.0")
     implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+}
+
+android{
+...
+    // Add this line
+    kapt { correctErrorTypes = true}
+
 }
 ```
 
