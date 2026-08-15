@@ -10,7 +10,8 @@ Open your **module-level** `build.gradle.kts` (usually `app/build.gradle.kts`):
 plugins {
    // Add this lines
     id ("kotlin-kapt")
-    id ("com.google.dagger.hilt.android")}
+    id ("com.google.dagger.hilt.android")
+}
 
 dependencies {
     // Hilt core - Add these lines
